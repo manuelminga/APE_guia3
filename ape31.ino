@@ -101,7 +101,7 @@ if ((tHigh1 + tLow1) > 0) {
 
   
   //SALIDA SERIAL
-  /*if (millis() - ultimoPrint >= 500) { // cada 0.5 s
+  if (millis() - ultimoPrint >= 500) { // cada 0.5 s
   ultimoPrint = millis();
 
   Serial.print("555 -> Freq: ");
@@ -114,12 +114,13 @@ if ((tHigh1 + tLow1) > 0) {
   Serial.print(frecuencia2);
   Serial.print(" Hz | Duty: ");
   Serial.print(duty2);
-    Serial.println(" %");}*/
-   int estado555 = digitalRead(pin555);
+    Serial.println(" %");} 
+  //Funcion para la grafica de Serial Plotter
+   /*int estado555 = digitalRead(pin555);
   int estadoFF = digitalRead(pinFF);
 
   
   Serial.print(estado555);
   Serial.print(","); 
-  Serial.println(estadoFF + 2);
+  Serial.println(estadoFF + 2);*/
 }
